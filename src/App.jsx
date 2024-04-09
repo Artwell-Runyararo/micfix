@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Headerz } from './components/index';
 import { NavBar } from './components/index';
-import { HeroSection } from './components/index';
+import { HeroSection, ServicesHome } from './components/index';
 
 function App() {
 
@@ -20,6 +20,11 @@ function App() {
       {/* Hero Section */}
       <HeroSection />
       {/* End of Hero Section */}
+
+
+      {/* ServicesHome Section */}
+      <ServicesHome />
+      {/* End of ServicesHome Section */}
     </>
   )
 }
