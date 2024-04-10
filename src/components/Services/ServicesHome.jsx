@@ -1,7 +1,12 @@
 import React from 'react';
 import logo from '../../assets/images/logos/migfix-02.png';
 import cardPicture from '../../assets/images/Untitled-2.png';
-import { Space, Flex } from 'antd';
+import cardPicture1 from '../../assets/images/international-worker-s-day-with-engineer-tools.jpg';
+import cardPicture2 from '../../assets/images/different-electrical-tools-wooden-background-flat-lay.jpg';
+
+import { Space, Flex, Card } from 'antd';
+
+const { Meta } = Card;
 
 const ServicesHome = () => {
     return (
@@ -23,85 +28,96 @@ const ServicesHome = () => {
                     {/* End of Double Lines */}
                 </div>
             </div>
-            <div className="row">
-                <div className="col-sm col-md col-lg">
-                    <div class="w-full flex justify-center">
-                        <div class="relative overflow-hidden rounded bg-gray-100 my-4">
-                            <div class="h-80 overflow-hidden rounded-t">
+            <div className="row sm:px-0 md:px-32 lg:px-32">
+                <div className="col-sm col-md-12 col-lg my-4">
+                    <Card className='h-100' cover={(<>
+                        <div class="relative overflow-hidden">
+                            <div class="overflow-hidden ">
                                 <div class="h-full">
                                     <img src={cardPicture} alt="" class="h-full w-full object-cover" />
                                 </div>
                             </div>
                             <div class="relative p-8 h-auto">
-                                <div class="absolute -top-14 left-0 w-full flex justify-center">
-                                    <div class="rounded-full p-2 text-gray-100 bg-blue-600 hover:bg-blue-700 text-xs mb-2">
-                                        <span className=''><i class="bi bi-browser-firefox text-8xl"></i></span>
+                                <div class="absolute -top-20 left-0 w-full flex justify-center">
+                                    <div class="rounded-full p-4 text-gray-100 bg-color-primary text-xs mb-2">
+                                        <span className=''><i class="bi bi-gear-wide text-8xl"></i></span>
+                                        {/* <i class="bi bi-fan"></i> */}
+                                        {/* <i class="bi bi-hammer"></i> */}
                                     </div>
-                                </div>
-                                <div class="text-2xl mb-2 leading-7">
-                                    <a href="#" class="text-blue-800 hover:text-blue-900 hover:underline hover:underline-offset-4 ">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    </a>
-                                </div>
-                                <div class="flex align-items-center font-medium">
-                                    <a href="#" class="block mr-1 text-sky-800">Read More</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </>)}>
+                        <Meta title={(<span className='font-black text-color-secodary text-3xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
+                            <ul>
+                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span>Procurement and Installation of industrial machines
+                                    including brick making machines etc</span></li>
+                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Building and construction and material supplies.
+                                    (Electrical, plumbing, ceiling, tiling and painting).</span></li>
+                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Supply of machinery spares (electrical and mechanical).</span></li>
+                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Electrical gates and Intercom installations and repairs.</span></li>
+                            </ul>
+                        </>)} />
+                    </Card>
+                </div>
+                <div className="col-sm col-md-12 col-lg my-4">
+                    <Card className='h-100 ' cover={(<>
+                        <div class="relative overflow-hidden">
+                            <div class="overflow-hidden ">
+                                <div class="h-full">
+                                    <img src={cardPicture1} alt="" class="h-full w-full object-cover" />
+                                </div>
+                            </div>
+                            <div class="relative p-8 h-auto">
+                                <div class="absolute -top-20 left-0 w-full flex justify-center">
+                                    <div class="rounded-full p-4 text-gray-100 bg-color-primary text-xs mb-2">
+                                        <span className=''><i class="bi bi-fan text-8xl"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </>)}>
+                        <Meta title={(<span className='font-black text-color-secodary text-3xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
+                            <ul>
+                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Project planning, design implementation and
+                                    commissioning. </span></li>
+                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Electrical and mechanical installations and
+                                    troubleshooting. </span></li>
+                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Machinery, equipment and infrastructure refurbishment.</span></li>
+                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Solar installations, upgrades and repairs.</span></li>
+                            </ul>
+                        </>)} />
+                    </Card>
+                </div>
+                <div className="col-sm col-md-12 col-lg my-4">
+                    <Card className='h-100 ' cover={(<>
+                        <div class="relative overflow-hidden">
+                            <div class="overflow-hidden ">
+                                <div class="h-full">
+                                    <img src={cardPicture2} alt="" class="h-full w-full object-cover" />
+                                </div>
+                            </div>
+                            <div class="relative p-8 h-auto">
+                                <div class="absolute -top-20 left-0 w-full flex justify-center">
+                                    <div class="rounded-full p-4 text-gray-100 bg-color-primary text-xs mb-2">
+                                        <span className=''><i class="bi bi-hammer text-8xl"></i></span>
 
-                </div>
-                <div className="col-sm col-md col-lg">
-                    <div class="w-full flex justify-center">
-                        <div class="relative overflow-hidden rounded bg-gray-100 my-4">
-                            <div class="h-80 overflow-hidden rounded-t">
-                                <div class="h-full">
-                                    <img src={cardPicture} alt="" class="h-full w-full object-cover" />
-                                </div>
-                            </div>
-                            <div class="relative p-8 h-auto">
-                                <div class="absolute -top-14 left-0 w-full flex justify-center">
-                                    <div class="rounded-full p-2 text-gray-100 bg-blue-600 hover:bg-blue-700 text-xs mb-2">
-                                        <span className=''><i class="bi bi-browser-firefox text-8xl"></i></span>
                                     </div>
-                                </div>
-                                <div class="text-2xl mb-2 leading-7">
-                                    <a href="#" class="text-blue-800 hover:text-blue-900 hover:underline hover:underline-offset-4 ">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    </a>
-                                </div>
-                                <div class="flex align-items-center font-medium">
-                                    <a href="#" class="block mr-1 text-sky-800">Read More</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className="col-sm col-md col-lg">
-                    <div class="w-full flex justify-center">
-                        <div class="relative overflow-hidden rounded bg-gray-100 my-4">
-                            <div class="h-80 overflow-hidden rounded-t">
-                                <div class="h-full">
-                                    <img src={cardPicture} alt="" class="h-full w-full object-cover" />
-                                </div>
-                            </div>
-                            <div class="relative p-8 h-auto">
-                                <div class="absolute -top-14 left-0 w-full flex justify-center">
-                                    <div class="rounded-full p-2 text-gray-100 bg-blue-600 hover:bg-blue-700 text-xs mb-2">
-                                        <span className=''><i class="bi bi-browser-firefox text-8xl"></i></span>
-                                    </div>
-                                </div>
-                                <div class="text-2xl mb-2 leading-7">
-                                    <a href="#" class="text-blue-800 hover:text-blue-900 hover:underline hover:underline-offset-4 ">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    </a>
-                                </div>
-                                <div class="flex align-items-center font-medium">
-                                    <a href="#" class="block mr-1 text-sky-800">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </>)}>
+                        <Meta title={(<span className='font-black text-color-secodary text-3xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
+                            <ul>
+                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Electrical repairs and maintenance services</span></li>
+                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Procurement, installation, calibration and repairs
+                                    of dosing machines. </span></li>
+                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Electrical AC and DC drives installations and repairs </span></li>
+                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> PLCs upgrades and troubleshooting.
+                                </span></li>
+                            </ul>
+                        </>)} />
+                    </Card>
                 </div>
             </div>
         </div>
