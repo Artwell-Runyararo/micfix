@@ -29,6 +29,10 @@
   background-color: #03061A;
 }
 
+.gray-extenal-color {
+  background-color: #F5F5F5 !important;
+}
+
 
 /* Swiper Css */
 #app {
