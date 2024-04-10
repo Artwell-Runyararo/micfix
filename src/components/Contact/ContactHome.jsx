@@ -11,13 +11,13 @@ const ContactHome = () => {
                 <div className="col-sm col-md col-lg">
                     <Flex justify='center' align="center" vertical='vertical'>
                         <span><img src={logo} alt='micfix' className="object-contain" width={50} /></span>
-                        <p className='text-5xl font-bold'>PLEASE DO NOT HESITATE TO</p>
+                        <p className='text-5xl font-bold  hidden lg:inline-block'>PLEASE DO NOT HESITATE TO</p>
                         <p className='text-5xl font-bold'>CONTACT US</p>
                     </Flex>
                 </div>
             </div>
             <div className="row pb-24">
-                <div className="col-sm col-md col-lg-2">&ensp;</div>
+                <div className="col-sm-0 col-md-2 col-lg-2">&ensp;</div>
                 <div className="col-sm col-md col-lg">
                     <Card className='p-5'>
                         <div className="row">
@@ -61,7 +61,7 @@ const ContactHome = () => {
                         </Form>
                     </Card>
                 </div>
-                <div className="col-sm col-md col-lg-2">&ensp;</div>
+                <div className="col-sm-0 col-md-2 col-lg-2">&ensp;</div>
             </div>
         </div>
     )

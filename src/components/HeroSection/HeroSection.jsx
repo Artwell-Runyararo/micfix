@@ -128,14 +128,14 @@ const HeroSection = () => {
           </div>
           <div className="col-sm col-md col-lg flex justify-center py-3">
             <span>
-              <p className='m-0 text-6xl font-bold font-bolder'><CountUp className='m-0 text-6xl font-bold font-bolder' end={100} /> +</p>
-              <p className='m-0 text-xl '>Employees in current tea,</p>
+              <p className='m-0 text-6xl font-bold font-bolder'><CountUp className='m-0 text-6xl font-bold font-bolder' end={250} /> +</p>
+              <p className='m-0 text-xl '>Our Satisfied Clients &ensp;&ensp;&ensp;&ensp;&ensp;</p>
             </span>
           </div>
           <div className="col-sm col-md col-lg flex justify-center py-3">
             <span>
-              <p className='m-0 text-6xl font-bold font-bolder'><CountUp className='m-0 text-6xl font-bold font-bolder' end={250} /> +</p>
-              <p className='m-0 text-xl '>Our Satisfied Clients</p>
+              <p className='m-0 text-6xl font-bold font-bolder'><CountUp className='m-0 text-6xl font-bold font-bolder' end={100} /> +</p>
+              <p className='m-0 text-xl '>Employees in current tea</p>
             </span>
           </div>
           <div className="col-sm col-md col-lg flex justify-center py-3">
