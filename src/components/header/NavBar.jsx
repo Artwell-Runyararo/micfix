@@ -159,7 +159,7 @@ const NavBar = () => {
           </div>
           <div className="col-sm col-md col-lg hidden lg:inline-block">
             <Flex >
-              <span className="bg-color-primary justify-center p-5 text-xl font-semibold w-100  text-white sm:flex hidden" >
+              <span className="bg-color-primary justify-center p-5 text-lg font-semibold w-100  text-white sm:flex hidden" >
                 CONTACT US
               </span>
             </Flex>

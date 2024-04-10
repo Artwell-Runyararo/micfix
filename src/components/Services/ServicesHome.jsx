@@ -10,7 +10,7 @@ const { Meta } = Card;
 
 const ServicesHome = () => {
     return (
-        <div className='container-fluid'>
+        <div className='container-fluid pb-32'>
             <div className="row">
                 <div className="col-sm col-md col-lg p-5">
                     <Flex justify='center' align="center" vertical='vertical'>
@@ -28,8 +28,8 @@ const ServicesHome = () => {
                     {/* End of Double Lines */}
                 </div>
             </div>
-            <div className="row sm:px-0 md:px-32 lg:px-32">
-                <div className="col-sm col-md-12 col-lg my-4">
+            <div className="row sm:px-0 md:px-0 lg:px-32">
+                <div className="col-sm col-md col-lg my-4">
                     <Card className='h-100' cover={(<>
                         <div class="relative overflow-hidden">
                             <div class="overflow-hidden ">
@@ -41,8 +41,6 @@ const ServicesHome = () => {
                                 <div class="absolute -top-20 left-0 w-full flex justify-center">
                                     <div class="rounded-full p-4 text-gray-100 bg-color-primary text-xs mb-2">
                                         <span className=''><i class="bi bi-gear-wide text-8xl"></i></span>
-                                        {/* <i class="bi bi-fan"></i> */}
-                                        {/* <i class="bi bi-hammer"></i> */}
                                     </div>
                                 </div>
                             </div>
@@ -60,7 +58,7 @@ const ServicesHome = () => {
                         </>)} />
                     </Card>
                 </div>
-                <div className="col-sm col-md-12 col-lg my-4">
+                <div className="col-sm col-md col-lg my-4">
                     <Card className='h-100 ' cover={(<>
                         <div class="relative overflow-hidden">
                             <div class="overflow-hidden ">
@@ -89,7 +87,7 @@ const ServicesHome = () => {
                         </>)} />
                     </Card>
                 </div>
-                <div className="col-sm col-md-12 col-lg my-4">
+                <div className="col-sm col-md col-lg my-4">
                     <Card className='h-100 ' cover={(<>
                         <div class="relative overflow-hidden">
                             <div class="overflow-hidden ">
