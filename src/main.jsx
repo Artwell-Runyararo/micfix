@@ -14,7 +14,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ConfigProvider theme={{
       "components": {
         "Card": {
-          "borderRadiusLG": 0
+          "borderRadiusLG": 0,
+          "boxShadowCard": "",
+          "boxShadowTertiary": ""
         }
       }
     }}>
