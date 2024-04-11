@@ -1,12 +1,12 @@
 import React from 'react'
 import { Button, Flex, Card } from 'antd'
-import cardPicture from '../../assets/images/different-electrical-tools-wooden-background-flat-lay.jpg';
+import cardPicture from '../../assets/images/plumber-pointing-lateral.jpg';
 const { Meta } = Card;
 
 const AboutHome = () => {
     return (
         <div className='container-fluid'>
-            <div className="row gray-extenal-color p-20">
+            <div className="row p-20">
                 <div className="col-sm col-md col-lg p-5">
                     <div className="row">
                         <div className="col-sm col-md col-lg">
@@ -18,13 +18,13 @@ const AboutHome = () => {
                             </div>
                             {/* End of Double Lines */}
 
-                            <p className='pt-5'>
+                            <p className='pt-5 text-[16px]'>
                                 Micfix Engineering (Pvt) Ltd is a passionate Organization which seeks to provide customer
                                 satisfaction in Electrical and Mechanical Engineering.
                                 The company has a team of highly skilled and qualified professionals who offer personalized
                                 services to meet the individual needs of their clients.
                             </p>
-                            <p>
+                            <p className='text-[16px]'>
                                 Micfix Engineering (Pvt) Ltd is committed to providing timely and accurate engineering services
                                 to help its clients make informed decisions. With focus on delivering client satisfication, the
                                 firm has built a reputation for excellence and integrity.
@@ -36,11 +36,11 @@ const AboutHome = () => {
                     </div>
                 </div>
                 <div className="col-sm col-md col-lg">
-                    <Card className='h-100 gray-extenal-color ' cover={(<>
+                    <Card bordered={false} className='h-50 shadow-0' cover={(<>
                         <div class="relative overflow-hidden">
                             <div class="overflow-hidden ">
                                 <div class="h-full">
-                                    <img src={cardPicture} alt="" class="h-full w-full object-cover" />
+                                    <img src={cardPicture} alt="" class="w-50 h-50 object-cover" />
                                 </div>
                             </div>
                         </div>
@@ -55,8 +55,8 @@ const AboutHome = () => {
                             </div>
                             {/* End of Double Lines */}
                         </>)} description={(<>
-                            <p>We are rated 5 star <i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i></p>
-                            <p className='py-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span>Quality services that gives clients optimum efficiency.</span></p>
+                            <p className='text-[16px]'>We are rated 5 star <i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i></p>
+                            <p className='py-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'>Quality services that gives clients optimum efficiency.</span></p>
                         </>)} />
                     </Card>
                 </div>

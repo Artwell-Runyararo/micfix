@@ -48,12 +48,10 @@ const ServicesHome = () => {
                     </>)}>
                         <Meta title={(<span className='font-black text-color-secodary text-3xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
                             <ul>
-                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span>Procurement and Installation of industrial machines
-                                    including brick making machines etc</span></li>
-                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Building and construction and material supplies.
-                                    (Electrical, plumbing, ceiling, tiling and painting).</span></li>
-                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Supply of machinery spares (electrical and mechanical).</span></li>
-                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Electrical gates and Intercom installations and repairs.</span></li>
+                                <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'>Procurement and Installation of industrial machines including brick making machines etc</span></li>
+                                <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Building and construction and material supplies. (Electrical, plumbing, ceiling, tiling and painting).</span></li>
+                                <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Supply of machinery spares (electrical and mechanical).</span></li>
+                                <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Electrical gates and Intercom installations and repairs.</span></li>
                             </ul>
                         </>)} />
                     </Card>
@@ -77,12 +75,10 @@ const ServicesHome = () => {
                     </>)}>
                         <Meta title={(<span className='font-black text-color-secodary text-3xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
                             <ul>
-                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Project planning, design implementation and
-                                    commissioning. </span></li>
-                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Electrical and mechanical installations and
-                                    troubleshooting. </span></li>
-                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Machinery, equipment and infrastructure refurbishment.</span></li>
-                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Solar installations, upgrades and repairs.</span></li>
+                                <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Project planning, design implementation and commissioning. </span></li>
+                                <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Electrical and mechanical installations and troubleshooting. </span></li>
+                                <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Machinery, equipment and infrastructure refurbishment.</span></li>
+                                <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Solar installations, upgrades and repairs.</span></li>
                             </ul>
                         </>)} />
                     </Card>
@@ -107,11 +103,10 @@ const ServicesHome = () => {
                     </>)}>
                         <Meta title={(<span className='font-black text-color-secodary text-3xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
                             <ul>
-                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Electrical repairs and maintenance services</span></li>
-                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Procurement, installation, calibration and repairs
-                                    of dosing machines. </span></li>
-                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> Electrical AC and DC drives installations and repairs </span></li>
-                                <li className='p-2'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span> PLCs upgrades and troubleshooting.
+                                <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Electrical repairs and maintenance services</span></li>
+                                <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Procurement, installation, calibration and repairs of dosing machines. </span></li>
+                                <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Electrical AC and DC drives installations and repairs </span></li>
+                                <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> PLCs upgrades and troubleshooting.
                                 </span></li>
                             </ul>
                         </>)} />

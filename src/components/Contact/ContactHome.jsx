@@ -23,7 +23,7 @@ const ContactHome = () => {
                         <div className="row">
                             <div className="col-sm col-md col-lg">
                                 <p className='font-bold text-3xl text-color-secondary m-0'>SEND US A MESSAGE</p>
-                                <p>Feal some love, to see what we can do...</p>
+                                <p className='text-[16px]'>Feal some love, to see what we can do...</p>
                             </div>
                         </div>
                         <Form className="p-2 sm:p-4" layout="vertical" hideRequiredMark>

@@ -45,18 +45,18 @@ const Footer = () => {
             </Space>
             <div className="row">
               <div className="col-sm-12 col-md-12 col-lg">
-                <p className='pt-5'>
+                <p className='pt-5 text-[16px]'>
                   Micfix Engineering (Pvt) Ltd is a passionate Organization which seeks to provide customer
                   satisfaction in Electrical and Mechanical Engineering.
                   The company has a team of highly skilled and qualified professionals who offer personalized
                   services to meet the individual needs of their clients.
                 </p>
-                <p>
+                <p className='text-[16px]'>
                   Micfix Engineering (Pvt) Ltd is committed to providing timely and accurate engineering services
                   to help its clients make informed decisions. With focus on delivering client satisfication, the
                   firm has built a reputation for excellence and integrity.
                 </p>
-                <p className='py-5'>&copy; {new Date().getFullYear()} Micfix Engineering (Pvt) Ltd. All Rights Reserved By Micfix Engineering.</p>
+                <p className='py-5 text-[16px]'>&copy; {new Date().getFullYear()} Micfix Engineering (Pvt) Ltd. All Rights Reserved By Micfix Engineering.</p>
               </div>
               <div className="col-sm-12 col-md-12 col-lg flex lg:justify-end">
                 <ul>
@@ -68,10 +68,10 @@ const Footer = () => {
                       <div className="col-sm col-md col-lg-10">&ensp;</div>
                     </div>
                   </li>
-                  <li className="py-2 hover:text-sky-800"><p href={'#'}>Home</p></li>
-                  <li className="py-2 hover:text-sky-800"><p href={'#'}>Services</p></li>
-                  <li className="py-2 hover:text-sky-800"><p href={'#'}>About Us</p></li>
-                  <li className="py-2 hover:text-sky-800"><p href={'#'}>Contact Us</p></li>
+                  <li className="py-2 hover:text-sky-800"><p className='text-[16px]' href={'#'}>Home</p></li>
+                  <li className="py-2 hover:text-sky-800"><p className='text-[16px]' href={'#'}>Services</p></li>
+                  <li className="py-2 hover:text-sky-800"><p className='text-[16px]' href={'#'}>About Us</p></li>
+                  <li className="py-2 hover:text-sky-800"><p className='text-[16px]' href={'#'}>Contact Us</p></li>
                 </ul>
               </div>
             </div>
