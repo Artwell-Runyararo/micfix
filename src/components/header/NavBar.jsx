@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import logo from '../../assets/images/logos/micfix.png';
 import { navLinks } from '../../constants';
 import { Flex } from 'antd';
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -150,9 +151,11 @@ const NavBar = () => {
                     className={`cursor-pointer px-5 ${active === nav.title ? "text-color-primary" : "text-dimWhite"} ${index === navLinks.length - 1 ? "mr-0" : "mr-0"}`}
                     onClick={() => setActive(nav.title)}
                   >
-                    <span className="text-xl font-semibold border-r border-slate-900 pr-16" >{nav.title}</span>
+                    <Link to={`${nav.id}`} className="text-xl font-semibold border-r border-slate-900 pr-16" >{nav.title}</Link>
                   </li>
+
                 ))}
+
               </ul>
               {/* End of Desktop Navigation */}
             </nav>
