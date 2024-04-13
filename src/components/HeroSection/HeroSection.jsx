@@ -27,91 +27,6 @@ const HeroSection = () => {
 
   return (
     <>
-      {/* <Swiper
-        style={{
-          '--swiper-navigation-color': '#fff',
-          '--swiper-pagination-color': '#fff',
-          height: '700px'
-        }}
-        spaceBetween={30}
-        effect={'fade'}
-        navigation={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[EffectFade, Navigation, Pagination, Autoplay]}
-        breakpoints={{
-          640: {
-            height: '700px'
-          },
-          768: {
-            height: '700px'
-          },
-          1024: {
-            height: '700px'
-          },
-          1560: {
-            height: '700px'
-          },
-        }}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <div className="image relative">
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            <div className="title-content absolute top-[20%] left-[8rem]">
-              <h3>More Luxury & trending</h3>
-              <h3>Wood cup of tea</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, asperiores?</p>
-            </div>
-          </div>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          <div className="container">
-            <div className="row ">
-              <div className="col-sm col-md col-lg-6 bg-slide-color-primary p-5">
-                <div className="p-5">
-                  <p>AN EXTENSIVE RANGE OF SERVICES</p>
-
-                  <div className="row">
-                    <div style={{ height: 2 }} className="col bg-white m-0 p-0"><div style={{ height: 2 }} className='bg-color-secondary w-20'></div></div>
-                  </div>
-
-                  <div className="title font-bold py-4" data-swiper-parallax="-300">
-                    OUR SERVICES
-                  </div>
-                  <div className="subtitle" data-swiper-parallax="-200">
-
-                  </div>
-                  <div className="text" data-swiper-parallax="-100">
-                    <p className='text-xl'>
-                      Micfix Engineering is committed to providing timely and accurate engineering
-                      information to help its clients to make informed decisions.
-                      With a focus on delivering clients satisfaction, the company has
-                      built a reputation for excellences and integrity.
-                    </p>
-                    <div>
-                      <button className='bg-color-primary text-uppercase shadow-sm p-4 font-semibold text-lg w-80 my-5'>Learn more</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-      </Swiper> */}
       <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
@@ -133,93 +48,107 @@ const HeroSection = () => {
         className="mySwiper"
       >
         <SwiperSlide style={{ backgroundImage: `url(${picture})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <div className="title-content w-50 absolute top-[16%] left-[8rem]  bg-slide-color-primary text-white">
-            <div className="px-24 py-16">
-              <p>AN EXTENSIVE RANGE OF SERVICES</p>
+          {/* Overlay div */}
+          <div className="absolute inset-0 bg-black/50 bg-opacity-80 w-full h-full m-0 p-0"></div>
+          <div className="relative w-full h-full" >
+            {/* Slide content */}
+            <div className="title-content w-50 absolute top-[10%] left-[8rem]  bg-slide-color-primary text-white">
+              <div className="px-24 py-16">
+                <p>AN EXTENSIVE RANGE OF SERVICES</p>
 
-              <div className="row">
-                <div style={{ height: 2 }} className="col bg-white m-0 p-0"><div style={{ height: 2 }} className='bg-color-secondary w-20'></div></div>
-              </div>
+                <div className="row">
+                  <div style={{ height: 2 }} className="col bg-white m-0 p-0"><div style={{ height: 2 }} className='bg-color-secondary w-20'></div></div>
+                </div>
 
-              <div className="title font-bold py-4" data-swiper-parallax="-300">
-                OUR SERVICES
-              </div>
-              <div className="subtitle" data-swiper-parallax="-200">
+                <div className="title font-bold py-4" data-swiper-parallax="-300">
+                  OUR SERVICES
+                </div>
+                <div className="subtitle" data-swiper-parallax="-200">
 
-              </div>
-              <div className="text" data-swiper-parallax="-100">
-                <p className='text-xl'>
-                  Micfix Engineering is committed to providing timely and accurate engineering
-                  information to help its clients to make informed decisions.
-                  With a focus on delivering clients satisfaction, the company has
-                  built a reputation for excellences and integrity.
-                </p>
-                <div>
-                  <button className='bg-color-secondary text-uppercase shadow-sm p-4 font-semibold text-lg w-80 my-5'>Learn more</button>
+                </div>
+                <div className="text" data-swiper-parallax="-100">
+                  <p className='text-xl'>
+                    Micfix Engineering is committed to providing timely and accurate engineering
+                    information to help its clients to make informed decisions.
+                    With a focus on delivering clients satisfaction, the company has
+                    built a reputation for excellences and integrity.
+                  </p>
+                  <div>
+                    <button className='bg-color-secondary text-uppercase shadow-sm p-4 font-semibold text-lg w-80 my-5'>Learn more</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide style={{ backgroundImage: `url(${picture1})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <div className="title-content w-50 absolute top-[16%] left-[8rem]  bg-slide-color-primary text-white">
-            <div className="px-24 py-16">
-              <p>AN EXTENSIVE RANGE OF SERVICES</p>
+          {/* Overlay div */}
+          <div className="absolute inset-0 bg-black/50 bg-opacity-80 w-full h-full m-0 p-0"></div>
+          <div className="relative w-full h-full" >
+            <div className="title-content w-50 absolute top-[10%] left-[8rem]  bg-slide-color-primary text-white">
+              <div className="px-24 py-16">
+                <p>AN EXTENSIVE RANGE OF SERVICES</p>
 
-              <div className="row">
-                <div style={{ height: 2 }} className="col bg-white m-0 p-0"><div style={{ height: 2 }} className='bg-color-secondary w-20'></div></div>
-              </div>
+                <div className="row">
+                  <div style={{ height: 2 }} className="col bg-white m-0 p-0"><div style={{ height: 2 }} className='bg-color-secondary w-20'></div></div>
+                </div>
 
-              <div className="title font-bold py-4" data-swiper-parallax="-300">
-                OUR SERVICES
-              </div>
-              <div className="subtitle" data-swiper-parallax="-200">
+                <div className="title font-bold py-4" data-swiper-parallax="-300">
+                  OUR SERVICES
+                </div>
+                <div className="subtitle" data-swiper-parallax="-200">
 
-              </div>
-              <div className="text" data-swiper-parallax="-100">
-                <p className='text-xl'>
-                  Micfix Engineering is committed to providing timely and accurate engineering
-                  information to help its clients to make informed decisions.
-                  With a focus on delivering clients satisfaction, the company has
-                  built a reputation for excellences and integrity.
-                </p>
-                <div>
-                  <button className='bg-color-secondary text-uppercase shadow-sm p-4 font-semibold text-lg w-80 my-5'>Learn more</button>
+                </div>
+                <div className="text" data-swiper-parallax="-100">
+                  <p className='text-xl'>
+                    Micfix Engineering is committed to providing timely and accurate engineering
+                    information to help its clients to make informed decisions.
+                    With a focus on delivering clients satisfaction, the company has
+                    built a reputation for excellences and integrity.
+                  </p>
+                  <div>
+                    <button className='bg-color-secondary text-uppercase shadow-sm p-4 font-semibold text-lg w-80 my-5'>Learn more</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+
         </SwiperSlide>
         <SwiperSlide style={{ backgroundImage: `url(${picture2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <div className="title-content w-50 absolute top-[16%] left-[8rem]  bg-slide-color-primary text-white">
-            <div className="px-24 py-16">
-              <p>AN EXTENSIVE RANGE OF SERVICES</p>
+          {/* Overlay div */}
+          <div className="absolute inset-0 bg-black/50 bg-opacity-80 w-full h-full m-0 p-0"></div>
+          <div className="relative w-full h-full" >
+            <div className="title-content w-50 absolute top-[10%] left-[8rem]  bg-slide-color-primary text-white">
+              <div className="px-24 py-16">
+                <p>AN EXTENSIVE RANGE OF SERVICES</p>
 
-              <div className="row">
-                <div style={{ height: 2 }} className="col bg-white m-0 p-0"><div style={{ height: 2 }} className='bg-color-secondary w-20'></div></div>
-              </div>
+                <div className="row">
+                  <div style={{ height: 2 }} className="col bg-white m-0 p-0"><div style={{ height: 2 }} className='bg-color-secondary w-20'></div></div>
+                </div>
 
-              <div className="title font-bold py-4" data-swiper-parallax="-300">
-                OUR SERVICES
-              </div>
-              <div className="subtitle" data-swiper-parallax="-200">
+                <div className="title font-bold py-4" data-swiper-parallax="-300">
+                  OUR SERVICES
+                </div>
+                <div className="subtitle" data-swiper-parallax="-200">
 
-              </div>
-              <div className="text" data-swiper-parallax="-100">
-                <p className='text-xl'>
-                  Micfix Engineering is committed to providing timely and accurate engineering
-                  information to help its clients to make informed decisions.
-                  With a focus on delivering clients satisfaction, the company has
-                  built a reputation for excellences and integrity.
-                </p>
-                <div>
-                  <button className='bg-color-secondary text-uppercase shadow-sm p-4 font-semibold text-lg w-80 my-5'>Learn more</button>
+                </div>
+                <div className="text" data-swiper-parallax="-100">
+                  <p className='text-xl'>
+                    Micfix Engineering is committed to providing timely and accurate engineering
+                    information to help its clients to make informed decisions.
+                    With a focus on delivering clients satisfaction, the company has
+                    built a reputation for excellences and integrity.
+                  </p>
+                  <div>
+                    <button className='bg-color-secondary text-uppercase shadow-sm p-4 font-semibold text-lg w-80 my-5'>Learn more</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </SwiperSlide>
-
       </Swiper>
 
       <div className="container-fluid">
