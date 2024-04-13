@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/grid';
 import 'swiper/css/navigation';
 
 // import required modules
@@ -213,41 +214,92 @@ const About = () => {
 
               </SwiperSlide>
               <SwiperSlide>
-                <div className="title" data-swiper-parallax="-300">
-                  Slide 2
+                <div className="container">
+                  <div className="row">
+
+                    <div className="col-sm col-md col-lg px-5">
+
+                      <p className='text-uppercase font-semibold text-color-secodary text-5xl' data-swiper-parallax="-300">Clients matters</p>
+                      {/* Double Lines */}
+                      <div className="row">
+                        <div style={{ height: 2 }} className="col-sm col-md col-lg bg-white m-0 p-0"><div style={{ height: 2 }} className='bg-color-secondary w-20'></div></div>
+                        <div className="col-sm col-md col-lg-9">&ensp;</div>
+                      </div>
+                      {/* End of Double Lines */}
+
+                      <p className='py-4 text-[16px]' data-swiper-parallax="-100">
+                        We believe in providing excellent client service to the mutual benefit of our clients and our firm.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="subtitle" data-swiper-parallax="-200">
-                  Subtitle
-                </div>
-                <div className="text" data-swiper-parallax="-100">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                    dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                    laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                    Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                    Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                    ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                    tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-                  </p>
+
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="container">
+                  <div className="row">
+
+                    <div className="col-sm col-md col-lg px-5">
+
+                      <p className='text-uppercase font-semibold text-color-secodary text-5xl' data-swiper-parallax="-300">teamwork matters</p>
+                      {/* Double Lines */}
+                      <div className="row">
+                        <div style={{ height: 2 }} className="col-sm col-md col-lg bg-white m-0 p-0"><div style={{ height: 2 }} className='bg-color-secondary w-20'></div></div>
+                        <div className="col-sm col-md col-lg-9">&ensp;</div>
+                      </div>
+                      {/* End of Double Lines */}
+
+                      <p className='py-4 text-[16px]' data-swiper-parallax="-100">
+                        We believe in a One Firm Approach with an open exchange of ideas across all levels of our organization
+                        and that each team member, by taking personal responsibility for their performance and by collaborating with and assisting others in their performance
+                        ,can achieve consistent sustainable success for our entire organization.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="title" data-swiper-parallax="-300">
-                  Slide 3
+                <div className="container">
+                  <div className="row">
+
+                    <div className="col-sm col-md col-lg px-5">
+
+                      <p className='text-uppercase font-semibold text-color-secodary text-5xl' data-swiper-parallax="-300">people matters</p>
+                      {/* Double Lines */}
+                      <div className="row">
+                        <div style={{ height: 2 }} className="col-sm col-md col-lg bg-white m-0 p-0"><div style={{ height: 2 }} className='bg-color-secondary w-20'></div></div>
+                        <div className="col-sm col-md col-lg-9">&ensp;</div>
+                      </div>
+                      {/* End of Double Lines */}
+
+                      <p className='py-4 text-[16px]' data-swiper-parallax="-100">
+                        We believe in an inclusive environment that provides our team members with balanced opportunities, the most up to date resources,constant support, and access to the information necessary that fosters personal and professional growth, learning and prosperity,and we believe that valuing opinions, demonstrating respect and caring, and promoting trust and fun within our organisation
+                        is critical to sustaining our success.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="subtitle" data-swiper-parallax="-200">
-                  Subtitle
-                </div>
-                <div className="text" data-swiper-parallax="-100">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                    dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                    laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                    Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                    Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                    ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                    tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-                  </p>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="container">
+                  <div className="row">
+
+                    <div className="col-sm col-md col-lg px-5">
+
+                      <p className='text-uppercase font-semibold text-color-secodary text-5xl' data-swiper-parallax="-300">environment matters</p>
+                      {/* Double Lines */}
+                      <div className="row">
+                        <div style={{ height: 2 }} className="col-sm col-md col-lg bg-white m-0 p-0"><div style={{ height: 2 }} className='bg-color-secondary w-20'></div></div>
+                        <div className="col-sm col-md col-lg-9">&ensp;</div>
+                      </div>
+                      {/* End of Double Lines */}
+
+                      <p className='py-4 text-[16px]' data-swiper-parallax="-100">
+                        We believe that by being involved in our community we can grow both personally and professionally. By celebrating our successess and promoting a sense of family within our
+                        organization we can be a source of strength, hope and help to one another.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -264,8 +316,54 @@ const About = () => {
           <div className="col-sm-0 col-md-2 col-lg-3">&ensp;</div>
         </div>
 
-        <div className="row">
-          <div className="col-sm col-md col-lg"></div>
+        <div className="row px-28 pb-52 g-5 ">
+          <div className="col-sm-12 col-md-12 col-lg">
+            <div className="row g-2">
+              <div className="col-sm col-md col-lg">
+                <div class="py-2"><img class="rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="" /></div>
+              </div>
+              <div className="col-sm col-md col-lg">
+                <div class="py-2"><img class="rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="" /></div>
+              </div>
+            </div>
+            <div className="row g-2">
+              <div className="col-sm col-md col-lg">
+                <div class="py-2"><img class="rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="" /></div>
+              </div>
+              <div className="col-sm col-md col-lg">
+                <div class="py-2"><img class="rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="" /></div>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-12 col-md-12 col-lg">
+            <p className='text-uppercase font-bold text-color-secondary text-3xl'>Why choose us</p>
+            <p><i className="bi bi-check-circle text-color-primary"></i> &ensp; Quality services that gives clients optimum efficiency. </p>
+            <p className='text-uppercase font-bold text-color-secondary text-3xl'>WHAT WE DO</p>
+            <p><i className="bi bi-check-circle text-color-primary"></i> &ensp; WE PARTNER WITH YOU, we don't throw costs, concerns and problems at you.
+              Our approachable and trusted people spend time with you to understand where your are
+              in your accounting journey so we can manage your finances for a sustainable and
+              profitable future.
+            </p>
+
+            <p className='text-uppercase font-bold text-color-secondary'><i className="bi bi-check-circle text-color-primary"></i> &ensp; SIMPLIFIED FOR YOU</p>
+            <p>
+              Our muscle-bound accounting teams and systems will take on the heavy lifting of your
+              accounting, taxes, compliance, and admin. Why does it yourself when we can do it for you?
+              This is where we shine.
+            </p>
+            <p className='text-uppercase font-bold text-color-secondary'><i className="bi bi-check-circle text-color-primary"></i> &ensp; BUSINESS TRANSFORMATION </p>
+            <p>
+              With your data we can do more than just your accounting, we can transform your processes,
+              improve your admin and make your life easier. We will help you automate, transform and refine
+              your finances, data and business operations.
+            </p>
+            <p className='text-uppercase font-bold text-color-secondary'><i className="bi bi-check-circle text-color-primary"></i> &ensp;DATA DRIVEN DECISION-MAKING</p>
+            <p>
+              Want to manage your data brilliantly? Want to ignite business growth but need more visibility?
+              We have got the answer to these questions- yes you do, and yes, we can help you do it right now!
+              We can take your data and transform it into insights today.
+            </p>
+          </div>
         </div>
       </div>
 
