@@ -37,10 +37,10 @@ const Contact = () => {
   });
   const submitEmai = (values) => {
     const details = {
-      name: values?.name,
-      email: values?.email,
-      phone: values?.phone,
-      message: values?.message,
+      'from_name': values?.from_name,
+      'email': values?.email,
+      'user_phone': values?.user_phone,
+      'message': values?.message
     }
     sendEmailMutation.mutate(details);
     form.resetFields();
@@ -55,7 +55,7 @@ const Contact = () => {
         <div className="container-fluid  bgPicture">
           {/* Welcome Section Products */}
           <div className="row bg-slate-950/90">
-            <div className="col-sm col-md col-lg-1">&ensp;</div>
+            <div className="col-sm-0 col-md-0 col-lg-1">&ensp;</div>
             <div style={{ height: '50vh' }} className="col-sm col-md col-lg py-10">
               <Flex vertical='vertical' justify='start' className='py-16'>
                 <TitleText title={(<>
@@ -82,7 +82,7 @@ const Contact = () => {
                 {/* End of Double Lines */}
               </Flex>
             </div>
-            <div className="col-sm col-md col-lg-6">&ensp;</div>
+            <div className="col-sm-0 col-md-0 col-lg-6">&ensp;</div>
           </div>
           {/* End of Welcome Section Products */}
         </div>
@@ -116,7 +116,7 @@ const Contact = () => {
                     <Form className="p-2 sm:p-4" form={form} onFinish={submitEmai} layout="vertical" hideRequiredMark>
                       <div className="row">
                         <div className="col-sm col-md col-lg">
-                          <Form.Item name={'name'} rules={[{ required: true, message: 'Please input your full name!', },]}>
+                          <Form.Item name={'from_name'} rules={[{ required: true, message: 'Please input your full name!', },]}>
                             <Input size="large" className='rounded-0 border-0' placeholder="Complete Name" />
                           </Form.Item>
                         </div>
@@ -128,7 +128,7 @@ const Contact = () => {
                           </Form.Item>
                         </div>
                         <div className="col-sm col-md col-lg">
-                          <Form.Item name={'phone'} rules={[{ required: true, message: 'Please input your phone number!', },]}>
+                          <Form.Item name={'user_phone'} rules={[{ required: true, message: 'Please input your phone number!', },]}>
                             <Input size="large" className='rounded-0 border-0' placeholder="Phone Number" />
                           </Form.Item>
                         </div>
@@ -288,6 +288,7 @@ const Contact = () => {
           {/* End of Moblie  */}
         </div>
       </motion.div>
+
       <Footer />
     </>
   )

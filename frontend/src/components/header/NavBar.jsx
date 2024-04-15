@@ -203,9 +203,7 @@ const NavBar = () => {
           </div>
           <div className="col-sm col-md col-lg hidden lg:inline-block">
             <Flex className='bg-color-primary p-4'>
-              <span className="justify-center my-2 text-lg font-semibold w-100  text-white sm:flex hidden" >
-                CONTACT US
-              </span>
+              <Link to={`/contact`} className="justify-center my-2 text-lg text-decoration-none font-semibold w-100  text-white sm:flex hidden" >CONTACT US</Link>
             </Flex>
           </div>
           <div className="col-sm col-md col-lg-1 sm:flex hidden">&ensp;</div>
