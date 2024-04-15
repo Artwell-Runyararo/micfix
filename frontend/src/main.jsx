@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'animate.css'
 import About from './pages/About/About.jsx';
 import Services from './pages/Services/Services.jsx';
 import Contact from './pages/Contact/Contact.jsx';

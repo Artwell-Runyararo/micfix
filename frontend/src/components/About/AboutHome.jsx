@@ -77,7 +77,6 @@ const AboutHome = () => {
                 </div>
             </div>
         </motion.div>
-
     )
 }
 
