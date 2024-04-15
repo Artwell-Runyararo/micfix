@@ -15,7 +15,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/grid';
 import 'swiper/css/navigation';
 
-// import required modules
+// import  asdasdasd required modules
 import { Parallax, Pagination, Navigation, Autoplay } from 'swiper/modules';
 const { Meta } = Card;
 
