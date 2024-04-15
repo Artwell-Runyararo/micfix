@@ -11,7 +11,7 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   const [toggleMobile, setToggleMobile] = useState(false);
 
-  return (
+  return (<>
     <div className='container-fluid'>
       <div className="row bg-color-secondary ">
         <div className="row g-0">
@@ -109,7 +109,7 @@ const NavBar = () => {
 
               {/* Mobile device */}
               <div className="inline-flex lg:hidden flex-1 justify-end z-50 items-center">
-                <div className={`${!toggle ? "hidden" : "flex"} w-full p-6  z-50 bg-white animate__animated animate__fadeInDown animate__fast border  absolute top-36 right-0 my-2  sidebar`} >
+                <div className={`${!toggle ? "hidden" : "flex"} w-full p-6  z-50 bg-white animate__animated animate__fadeInDown animate__fast border  absolute top-48 right-0 my-2  sidebar`} >
                   <div className="row p-3">
                     <div className="col-sm col-md col-lg">
                       <Space wrap size={'large'}>
@@ -152,12 +152,42 @@ const NavBar = () => {
           </div>
           <div className="col-sm-0 col-md-0 col-lg-1">&ensp;</div>
         </div>
-        <div className="row g-0 ">
+        {/* Removed from here */}
+
+        <div className="inline-block lg:hidden flex-1 justify-end z-50  items-center">
+          <div className={`${!toggleMobile ? "hidden" : "flex"} w-full p-6  z-50 bg-white animate__animated animate__fadeInDown animate__fast border  absolute top-48 right-0 my-2  sidebar`} >
+            <div className="row">
+              <div className="col-sm col-md col-lg  inline-block lg:hidden">
+                <nav>
+                  {/* Mobile Navigation */}
+                  <ul className="list-none bg-white m-0 p-4 w-full inline-block lg:hidden">
+                    {navLinks.map((nav, index) => (
+                      <li key={nav.id}
+                        className={`cursor-pointer my-5 px-5 ${active === nav.title ? "text-color-primary" : "text-dimWhite"} ${index === navLinks.length - 1 ? "mr-0" : "mr-0"}`}
+                        onClick={() => setActive(nav.title)}
+                      >
+                        <Link to={`${nav.id}`} className="text-xl text-color-secondary text-decoration-none font-semibold border-b border-slate-900 pr-16 " >{nav.title}</Link>
+                      </li>
+
+                    ))}
+
+                  </ul>
+                  {/* End of Mobile Navigation */}
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className='container-fluid w-full top-0 z-50 sticky'>
+      <div className="row bg-color-secondary ">
+        <div className="row g-0">
           <div className="col-sm col-md col-lg-1 sm:flex hidden">&ensp;</div>
           <div className="col-sm-12 col-md-12 col-lg-8 hidden lg:inline-block">
             <nav>
               {/* Desktop Navigation */}
-              <ul className="list-none bg-white m-0 p-4 w-full sm:flex hidden">
+              <ul className="list-none justify-center  bg-white m-0 p-4 w-full sm:flex hidden">
                 {navLinks.map((nav, index) => (
                   <li key={nav.id}
                     className={`cursor-pointer my-2 px-5 ${active === nav.title ? "text-color-primary" : "text-dimWhite"} ${index === navLinks.length - 1 ? "mr-0" : "mr-0"}`}
@@ -167,7 +197,6 @@ const NavBar = () => {
                   </li>
 
                 ))}
-
               </ul>
               {/* End of Desktop Navigation */}
             </nav>
@@ -181,34 +210,9 @@ const NavBar = () => {
           </div>
           <div className="col-sm col-md col-lg-1 sm:flex hidden">&ensp;</div>
         </div>
-
-        <div className="inline-block lg:hidden flex-1 justify-end z-50 items-center">
-          <div className={`${!toggleMobile ? "hidden" : "flex"} w-full p-6  z-50 bg-white animate__animated animate__fadeInDown animate__fast border  absolute top-36 right-0 my-2  sidebar`} >
-            <div className="row">
-              <div className="col-sm col-md col-lg inline-block lg:hidden">
-                <nav>
-                  {/* Desktop Navigation */}
-                  <ul className="list-none bg-white m-0 p-4 w-full inline-block lg:hidden">
-                    {navLinks.map((nav, index) => (
-                      <li key={nav.id}
-                        className={`cursor-pointer my-5 px-5 ${active === nav.title ? "text-color-primary" : "text-dimWhite"} ${index === navLinks.length - 1 ? "mr-0" : "mr-0"}`}
-                        onClick={() => setActive(nav.title)}
-                      >
-                        <Link to={`${nav.id}`} className="text-xl text-color-secondary text-decoration-none font-semibold border-b border-slate-900 pr-16 " >{nav.title}</Link>
-                      </li>
-
-                    ))}
-
-                  </ul>
-                  {/* End of Desktop Navigation */}
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
+  </>
   )
 }
 
