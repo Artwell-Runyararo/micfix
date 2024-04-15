@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://api.emailjs.com';
 
 const axiosBase_URL = axios.create({
     baseURL: BASE_URL,
@@ -31,14 +31,21 @@ export const sendingEmails = async (requestBody) => {
             accept: "application/json",
         },
     };
-    const details = {
-        'recip_name': requestBody?.name,
-        'recip_email': requestBody?.email,
-        'recip_phone': requestBody?.phone,
-        'recip_message': requestBody?.message,
-    }
-    console.log(details);
-    const responseData = await axiosBase_URL.post(`/send_email`, details,
+    const data = {
+        service_id: 'service_4wxse8d',
+        template_id: 'template_bp1rfob',
+        user_id: 'KYskwA-48COl3ta7u',
+        template_params: {
+            'from_name': requestBody?.from_name,
+            'email': requestBody?.email,
+            'user_phone': requestBody?.user_phone,
+            'message': requestBody?.message,
+            'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
+        }
+    };
+    console.log(data);
+
+    const responseData = await axiosBase_URL.post(`/api/v1.0/email/send`, JSON.stringify(data),
         axiosConfig
     ).then((response) => {
         return response.data;

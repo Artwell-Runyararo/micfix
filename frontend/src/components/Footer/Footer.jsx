@@ -3,6 +3,7 @@ import { Space, Flex } from 'antd'
 import logo from '../../assets/images/logos/micfix.png';
 import { navVariants, slideIn, staggerContainer, textVariant, textVariant2, textContainer, fadeIn, zoomIn, footerVariants } from '../../utils/motion';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (<>
@@ -59,7 +60,7 @@ const Footer = () => {
                     to help its clients make informed decisions. With focus on delivering client satisfication, the
                     firm has built a reputation for excellence and integrity.
                   </p>
-                  <p className='py-5 text-[16px]'>&copy; {new Date().getFullYear()} Micfix Engineering (Pvt) Ltd. All Rights Reserved By Micfix Engineering.</p>
+                  <p className='py-5 text-[16px]'>&copy; {new Date().getFullYear()} Micfix Engineering (Pvt) Ltd. All Rights Reserved By Micfix Engineering. <i className='text-color-primary'>Designed By Artwell R Murimi</i></p>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg flex lg:justify-end">
                   <ul>
@@ -71,10 +72,10 @@ const Footer = () => {
                         <div className="col-sm col-md col-lg-10">&ensp;</div>
                       </div>
                     </li>
-                    <li className="py-2 hover:text-sky-800"><p className='text-[16px]' href={'#'}>Home</p></li>
-                    <li className="py-2 hover:text-sky-800"><p className='text-[16px]' href={'#'}>Services</p></li>
-                    <li className="py-2 hover:text-sky-800"><p className='text-[16px]' href={'#'}>About Us</p></li>
-                    <li className="py-2 hover:text-sky-800"><p className='text-[16px]' href={'#'}>Contact Us</p></li>
+                    <li className="py-2 hover:text-sky-800"><Link className='text-[16px] text-white text-decoration-none' to={'/'}>Home</Link></li>
+                    <li className="py-2 hover:text-sky-800"><Link className='text-[16px] text-white text-decoration-none' to={'/services'}>Services</Link></li>
+                    <li className="py-2 hover:text-sky-800"><Link className='text-[16px] text-white text-decoration-none' to={'/about'}>About Us</Link></li>
+                    <li className="py-2 hover:text-sky-800"><Link className='text-[16px] text-white text-decoration-none' to={'/contact'}>Contact Us</Link></li>
                   </ul>
                 </div>
               </div>

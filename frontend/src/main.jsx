@@ -20,6 +20,17 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           "borderRadiusLG": 0,
           "boxShadowCard": "",
           "boxShadowTertiary": ""
+        },
+        "Button": {
+          "defaultActiveColor": "rgb(0, 170, 185)",
+          "defaultActiveBorderColor": "rgb(0, 170, 185)",
+          "defaultBg": "rgb(0, 170, 185)",
+          "defaultHoverBorderColor": "rgb(0, 170, 185)",
+          "defaultHoverColor": "rgb(62, 222, 236)",
+          "groupBorderColor": "rgb(61, 239, 255)",
+          "paddingXS": 29,
+          "borderRadius": 0,
+          "borderRadiusLG": 0
         }
       }
     }}>

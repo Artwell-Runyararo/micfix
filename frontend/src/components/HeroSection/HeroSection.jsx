@@ -21,22 +21,15 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
 
-  const progressCircle = useRef(null);
-  const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty('--progress', 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-  };
-
   return (
     <>
-      <motion.div variants={staggerContainer} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.25 }}>
+      <motion.div variants={staggerContainer} className='p-0 m-0' initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.25 }}>
         {/* Desktop */}
         <Swiper
           style={{
             '--swiper-navigation-color': '#fff',
             '--swiper-pagination-color': '#fff',
-            height: '750px'
+            height: '800px'
           }}
           spaceBetween={30}
           effect={'fade'}
@@ -50,9 +43,9 @@ const HeroSection = () => {
           }}
           modules={[EffectFade, Navigation, Pagination, Autoplay]}
 
-          className="mySwiper hidden lg:inline-flex p-0 m-0"
+          className="mySwiper p-0 m-0 hidden lg:block"
         >
-          <SwiperSlide style={{ backgroundImage: `url(${picture})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <SwiperSlide className='m-0' style={{ backgroundImage: `url(${picture})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             {/* Overlay div */}
             <div className="absolute inset-0 bg-black/50 bg-opacity-80 w-full h-full m-0 p-0"></div>
             <div className="relative w-full h-full" >
@@ -87,7 +80,7 @@ const HeroSection = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide style={{ backgroundImage: `url(${picture1})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <SwiperSlide className='m-0' style={{ backgroundImage: `url(${picture1})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             {/* Overlay div */}
             <div className="absolute inset-0 bg-black/50 bg-opacity-80 w-full h-full m-0 p-0"></div>
             <div className="relative w-full h-full" >
@@ -120,7 +113,7 @@ const HeroSection = () => {
             </div>
 
           </SwiperSlide>
-          <SwiperSlide style={{ backgroundImage: `url(${picture2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <SwiperSlide className='m-0' style={{ backgroundImage: `url(${picture2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             {/* Overlay div */}
             <div className="absolute inset-0 bg-black/50 bg-opacity-80 w-full h-full m-0 p-0"></div>
             <div className="relative w-full h-full" >
@@ -150,11 +143,12 @@ const HeroSection = () => {
           </SwiperSlide>
         </Swiper>
         {/* end of Desktop */}
+        
         <Swiper
           style={{
             '--swiper-navigation-color': '#fff',
             '--swiper-pagination-color': '#fff',
-            height: '750px'
+            height: '800px'
           }}
           spaceBetween={30}
           effect={'fade'}
@@ -167,9 +161,9 @@ const HeroSection = () => {
             clickable: true,
           }}
           modules={[EffectFade, Navigation, Pagination, Autoplay]}
-          className="mySwiper inline-flex lg:hidden"
+          className="mySwiper m-0 p-0 block lg:hidden"
         >
-          <SwiperSlide style={{ backgroundImage: `url(${picture})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <SwiperSlide className='m-0' style={{ backgroundImage: `url(${picture})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             {/* Overlay div */}
             <div className="absolute inset-0 bg-black/50 bg-opacity-80 w-full h-full m-0 p-0"></div>
             <div className="relative w-full h-full" >
@@ -198,7 +192,7 @@ const HeroSection = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide style={{ backgroundImage: `url(${picture1})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <SwiperSlide className='m-0' style={{ backgroundImage: `url(${picture1})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             {/* Overlay div */}
             <div className="absolute inset-0 bg-black/50 bg-opacity-80 w-full h-full m-0 p-0"></div>
             <div className="relative w-full h-full" >
@@ -227,7 +221,7 @@ const HeroSection = () => {
             </div>
 
           </SwiperSlide>
-          <SwiperSlide style={{ backgroundImage: `url(${picture2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <SwiperSlide className='m-0' style={{ backgroundImage: `url(${picture2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             {/* Overlay div */}
             <div className="absolute inset-0 bg-black/50 bg-opacity-80 w-full h-full m-0 p-0"></div>
             <div className="relative w-full h-full" >
@@ -252,7 +246,8 @@ const HeroSection = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        <div className="container-fluid p-0 m-0">
+
+        <div className="container-fluid p-0 m-0 bg-danger">
           <div className="row bg-color-secondary m-0 p-5 text-white ">
             <div className="col-sm col-md col-lg flex justify-center py-3">
               <span>

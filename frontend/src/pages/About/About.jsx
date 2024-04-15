@@ -3,7 +3,10 @@ import { Headerz, NavBar, Footer } from '../../components'
 import { Space, Flex, Card } from 'antd';
 import { TitleText } from '../../constants/typingText';
 import cardPicture from '../../assets/images/plumber-holding-something.jpg';
-import cardPicture2 from '../../assets/images/close-up-electronic-components.png';
+import cardPicture2 from '../../assets/images/logos/migfix-01.png';
+import cardPicture3 from '../../assets/images/african-american-technician-checks-maintenance-solar-panels-group-three-black-engineers-meeting-solar-station.png';
+import cardPicture1 from '../../assets/images/international-worker-s-day-with-engineer-tools.png';
+import cardPicture4 from '../../assets/images/different-electrical-tools-wooden-background-flat-lay.png';
 import logo from '../../assets/images/logos/migfix-02.png';
 import { navVariants, slideIn, staggerContainer, textVariant, textVariant2, textContainer, fadeIn, zoomIn, footerVariants } from '../../utils/motion';
 import { motion } from 'framer-motion';
@@ -32,7 +35,7 @@ const About = () => {
           {/* style={{ overflow: 'hidden', }} */}
           {/* Welcome Section Products */}
           <div className="row bg-slate-950/90">
-            <div className="col-sm col-md col-lg-1">&ensp;</div>
+            <div className="col-sm-0 col-md-0 col-lg-1">&ensp;</div>
             <div style={{ height: '50vh' }} className="col-sm col-md col-lg py-10">
               <Flex vertical='vertical' justify='start' className='py-16'>
                 <TitleText title={(<>
@@ -59,14 +62,15 @@ const About = () => {
                 {/* End of Double Lines */}
               </Flex>
             </div>
-            <div className="col-sm col-md col-lg-6">&ensp;</div>
+            <div className="col-sm-0 col-md-0 col-lg-6">&ensp;</div>
           </div>
           {/* End of Welcome Section Products */}
         </div>
 
         <div className='container-fluid'>
 
-          <div className="row p-20">
+          <div className="row py-20">
+            <div className="col-sm col-md-0 col-lg-1">&ensp;</div>
             <div className="col-sm-12 col-md-12 col-lg p-5">
               <div className="row">
                 <div className="col-sm col-md col-lg">
@@ -105,11 +109,12 @@ const About = () => {
               </>)}>
               </Card>
             </div>
+            <div className="col-sm col-md-0 col-lg-1">&ensp;</div>
           </div>
 
 
           <div className="row g-0 py-20">
-            <div className="col-sm col-md col-lg-1">&ensp;</div>
+            <div className="col-sm-12 col-md-12 col-lg-1">&ensp;</div>
             <div className="col-sm-12 col-md-12 col-lg bg-color-primary p-5">
               <div className="row p-14">
                 <div className="col-sm col-md col-lg">
@@ -149,7 +154,7 @@ const About = () => {
             <div className="col-sm-12 col-md-12 col-lg">
               <img src={cardPicture2} alt="" class="w-full h-full object-cover" />
             </div>
-            <div className="col-sm col-md col-lg-1">&ensp;</div>
+            <div className="col-sm-12 col-md-12 col-lg-1">&ensp;</div>
           </div>
 
           <div className="row">
@@ -195,11 +200,9 @@ const About = () => {
                   data-swiper-parallax="-23%"
                 ></div>
                 <SwiperSlide>
-                  <div className="container">
+                  <div className="container-fluid" style={{ overflow: 'hidden', }}>
                     <div className="row">
-
                       <div className="col-sm col-md col-lg px-5">
-
                         <p className='text-uppercase font-semibold text-color-secodary text-5xl' data-swiper-parallax="-300">integrity matters</p>
                         {/* Double Lines */}
                         <div className="row">
@@ -324,18 +327,18 @@ const About = () => {
             <div className="col-sm-12 col-md-12 col-lg">
               <div className="row g-2">
                 <div className="col-sm col-md col-lg">
-                  <div class="py-2"><img class="rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="" /></div>
+                  <div class="py-2"><img class="rounded shadow-md" src={cardPicture2} alt="" /></div>
                 </div>
                 <div className="col-sm col-md col-lg">
-                  <div class="py-2"><img class="rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="" /></div>
+                  <div class="py-2"><img class="rounded shadow-md" src={cardPicture3} alt="" /></div>
                 </div>
               </div>
               <div className="row g-2">
                 <div className="col-sm col-md col-lg">
-                  <div class="py-2"><img class="rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="" /></div>
+                  <div class="py-2"><img class="rounded shadow-md" src={cardPicture4} alt="" /></div>
                 </div>
                 <div className="col-sm col-md col-lg">
-                  <div class="py-2"><img class="rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="" /></div>
+                  <div class="py-2"><img class="rounded shadow-md" src={cardPicture} alt="" /></div>
                 </div>
               </div>
             </div>
