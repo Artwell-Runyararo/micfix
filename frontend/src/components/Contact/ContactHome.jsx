@@ -136,11 +136,11 @@ const ContactHome = () => {
                 <div className="row pb-24">
                     <div className="col-sm-0 col-md-2 col-lg-2">&ensp;</div>
                     <div className="col-sm col-md col-lg">
-                        <Card className='p-5'>
+                        <Card className=''>
                             <div className="row">
                                 <div className="col-sm col-md col-lg">
                                     <p className='font-bold text-3xl text-color-secondary m-0'>SEND US A MESSAGE</p>
-                                    <p className='text-[16px]'>Feal some love, to see what we can do...</p>
+                                    <p className='text-[14px]'>Feal some love, to see what we can do...</p>
                                 </div>
                             </div>
                             {sendEmailMutation.isError ? (

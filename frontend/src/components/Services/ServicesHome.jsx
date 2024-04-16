@@ -34,7 +34,7 @@ const ServicesHome = () => {
                     </div>
                 </div>
                 <div className="row sm:px-0 md:px-0 lg:px-32">
-                    <div className="col-sm col-md col-lg " style={{ overflow: 'hidden', }}>
+                    <div className="col-sm-12 col-md-12 col-lg " style={{ overflow: 'hidden', }}>
                         <motion.div variants={slideIn('left', 'spring', 0.1, 3)} style={{ overflow: 'hidden', position: 'relative' }}>
                             <Card className='h-100' cover={(<>
                                 <div class="relative overflow-hidden">
@@ -52,7 +52,7 @@ const ServicesHome = () => {
                                     </div>
                                 </div>
                             </>)}>
-                                <Meta title={(<span className='font-black text-color-secodary text-3xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
+                                <Meta title={(<span className='font-black text-color-secodary text-xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
                                     <ul>
                                         <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'>Procurement and Installation of industrial machines including brick making machines etc</span></li>
                                         <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Building and construction and material supplies. (Electrical, plumbing, ceiling, tiling and painting).</span></li>
@@ -63,7 +63,7 @@ const ServicesHome = () => {
                             </Card>
                         </motion.div>
                     </div>
-                    <div className="col-sm col-md col-lg " style={{ overflow: 'hidden', }}>
+                    <div className="col-sm-12 col-md-12 col-lg " style={{ overflow: 'hidden', }}>
                         <motion.div variants={zoomIn(0.2, 1)} style={{ overflow: 'hidden', position: 'relative' }}>
                             <Card className='h-100 ' cover={(<>
                                 <div class="relative overflow-hidden">
@@ -81,7 +81,7 @@ const ServicesHome = () => {
                                     </div>
                                 </div>
                             </>)}>
-                                <Meta title={(<span className='font-black text-color-secodary text-3xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
+                                <Meta title={(<span className='font-black text-color-secodary text-xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
                                     <ul>
                                         <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Project planning, design implementation and commissioning. </span></li>
                                         <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Electrical and mechanical installations and troubleshooting. </span></li>
@@ -111,7 +111,7 @@ const ServicesHome = () => {
                                     </div>
                                 </div>
                             </>)}>
-                                <Meta title={(<span className='font-black text-color-secodary text-3xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
+                                <Meta title={(<span className='font-black text-color-secodary text-xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
                                     <ul>
                                         <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Electrical repairs and maintenance services</span></li>
                                         <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Procurement, installation, calibration and repairs of dosing machines. </span></li>
@@ -132,8 +132,9 @@ const ServicesHome = () => {
                     <Flex justify='center' align="center" vertical='vertical'>
                         <span><img src={logo} alt='micfix' className="object-contain" width={50} /></span>
                         <p>MAKE A SMART CHOICE, CHOOSE</p>
-                        <p className='text-5xl font-bold'>QUALITY SERVICES</p>
+                        <p className='text-4xl font-bold'>QUALITY SERVICES</p>
                     </Flex>
+                
 
                     {/* Double Lines */}
                     <div className="row">
@@ -144,7 +145,7 @@ const ServicesHome = () => {
                     {/* End of Double Lines */}
                 </div>
             </div>
-            <div className="row sm:px-0 md:px-0 lg:px-32">
+            <div className="row sm:px-0 md:px-0 lg:px-16">
                 <div className="col-sm col-md col-lg " style={{ overflow: 'hidden', }}>
                     <Card className='h-100' cover={(<>
                         <div class="relative overflow-hidden">
@@ -162,7 +163,7 @@ const ServicesHome = () => {
                             </div>
                         </div>
                     </>)}>
-                        <Meta title={(<span className='font-black text-color-secodary text-3xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
+                        <Meta title={(<span className='font-black text-color-secodary text-xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
                             <ul>
                                 <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'>Procurement and Installation of industrial machines including brick making machines etc</span></li>
                                 <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Building and construction and material supplies. (Electrical, plumbing, ceiling, tiling and painting).</span></li>
@@ -189,7 +190,7 @@ const ServicesHome = () => {
                             </div>
                         </div>
                     </>)}>
-                        <Meta title={(<span className='font-black text-color-secodary text-3xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
+                        <Meta title={(<span className='font-black text-color-secodary text-xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
                             <ul>
                                 <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Project planning, design implementation and commissioning. </span></li>
                                 <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Electrical and mechanical installations and troubleshooting. </span></li>
@@ -217,7 +218,7 @@ const ServicesHome = () => {
                             </div>
                         </div>
                     </>)}>
-                        <Meta title={(<span className='font-black text-color-secodary text-3xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
+                        <Meta title={(<span className='font-black text-color-secodary text-xl flex text-center justify-center'>Quality Installations & Services</span>)} description={(<>
                             <ul>
                                 <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Electrical repairs and maintenance services</span></li>
                                 <li className='p-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'> Procurement, installation, calibration and repairs of dosing machines. </span></li>
