@@ -84,7 +84,7 @@ const AboutHome = () => {
             </div>
         </motion.div>
         <div className='container-fluid block lg:hidden'>
-            <div className="row px-16">
+            <div className="row px-3">
                 <div className="col-sm-12 col-md-12 col-lg">
                     <div className="row">
                         <div className="col-sm col-md col-lg">
@@ -117,7 +117,7 @@ const AboutHome = () => {
                             <Card bordered={false} className='m-0 py-20 shadow-0'>
                                 <Meta title={(<>
                                     <p>MICFIX IS MODERN, AGILE AND RELEVANT.</p>
-                                    <p className='text-uppercase font-black text-color-secodary text-6xl'>WHY CHOOSE US</p>
+                                    <p className='text-uppercase font-black text-color-secodary text-4xl'>WHY CHOOSE US</p>
                                     {/* Double Lines */}
                                     <div className="row">
                                         <div style={{ height: 2 }} className="col bg-color-primary m-0 p-0"><div style={{ height: 2 }} className='bg-color-secondary w-20'></div></div>
@@ -125,7 +125,7 @@ const AboutHome = () => {
                                     </div>
                                     {/* End of Double Lines */}
                                 </>)} description={(<>
-                                    <p className='text-[16px]'>We are rated 5 star <i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i></p>
+                                    <p className='text-[16px]'>We are rated 5 star <i class="bi bi-star-fill text-color-primary"></i><i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i><i class="bi bi-star-fill text-color-primary mx-2"></i></p>
                                     <p className='py-2 text-[16px]'><i class="bi bi-check-circle text-color-primary"></i> &ensp;<span className='text-[16px]'>Quality services that gives clients optimum efficiency.</span></p>
                                 </>)} />
                             </Card>

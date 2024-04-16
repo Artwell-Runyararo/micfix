@@ -125,7 +125,7 @@ const HeroSection = () => {
                     <div style={{ height: 2 }} className="col bg-white m-0 p-0"><div style={{ height: 2 }} className='bg-color-secondary w-20'></div></div>
                   </div>
 
-                  <div className="title font-bold py-4 text-uppercase" data-swiper-parallax="-300"> Engineering Excellence</div>
+                  <div className="text-5xl font-bold py-4 text-uppercase" data-swiper-parallax="-300"> Engineering Excellence</div>
 
                   <div className="text" data-swiper-parallax="-100">
                     <p className='text-xl'>
@@ -143,39 +143,35 @@ const HeroSection = () => {
           </SwiperSlide>
         </Swiper>
         {/* end of Desktop */}
-        
+
         <Swiper
           style={{
             '--swiper-navigation-color': '#fff',
             '--swiper-pagination-color': '#fff',
-            height: '800px'
+            height: '500px'
           }}
-          spaceBetween={30}
+          // spaceBetween={30}
           effect={'fade'}
-          navigation={true}
+          // navigation={true}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
           modules={[EffectFade, Navigation, Pagination, Autoplay]}
           className="mySwiper m-0 p-0 block lg:hidden"
         >
-          <SwiperSlide className='m-0' style={{ backgroundImage: `url(${picture})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <SwiperSlide className='px-5' style={{ backgroundImage: `url(${picture})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             {/* Overlay div */}
             <div className="absolute inset-0 bg-black/50 bg-opacity-80 w-full h-full m-0 p-0"></div>
             <div className="relative w-full h-full" >
               {/* Slide content */}
               <motion.div variants={slideIn('right', 'spring', 0.1, 3)} style={{ overflow: 'hidden', position: 'relative' }}></motion.div>
               <div className="title-content w-full absolute  text-white animate__animated animate__fadeInRight">
-                <div className="py-16">
+                <div className="py-12">
                   <p>INTRODUCTION</p>
 
-                  <div className="title font-bold py-4" data-swiper-parallax="-300">
-                    MICFIX ENGINEERING
-                  </div>
+                  <div className="title font-bold py-4 hidden lg:block" data-swiper-parallax="-300">MICFIX ENGINEERING</div>
+                  <div className="font-bold text-4xl py-3 block lg:hidden" data-swiper-parallax="-300">MICFIX ENGINEERING</div>
 
                   <div className="text" data-swiper-parallax="-100">
                     <p className='text-xl'>
@@ -184,7 +180,7 @@ const HeroSection = () => {
                       With a focus on delivering clients satisfaction, the company has
                       built a reputation for excellences and integrity.
                     </p>
-                    <div className='py-16'>
+                    <div className='py-12'>
                       <Link to={`/about`} className='bg-color-secondary text-uppercase text-white text-decoration-none shadow-sm p-4 font-semibold text-lg w-100 my-5'>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Learn more &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</Link>
                     </div>
                   </div>
@@ -192,27 +188,24 @@ const HeroSection = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className='m-0' style={{ backgroundImage: `url(${picture1})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <SwiperSlide className='px-5' style={{ backgroundImage: `url(${picture1})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             {/* Overlay div */}
             <div className="absolute inset-0 bg-black/50 bg-opacity-80 w-full h-full m-0 p-0"></div>
             <div className="relative w-full h-full" >
               <div className="title-content w-full absolute text-white animate__animated animate__fadeInRight">
-                <div className="py-16">
+                <div className="py-14">
                   <p>AN EXTENSIVE RANGE OF SERVICES</p>
 
-                  <div className="title font-bold py-4" data-swiper-parallax="-300">
-                    OUR SERVICES
-                  </div>
-                  <div className="subtitle" data-swiper-parallax="-200">
+                  <div className="title font-bold py-4 hidden lg:block" data-swiper-parallax="-300">OUR SERVICES</div>
+                  <div className="font-bold text-4xl py-3 block lg:hidden" data-swiper-parallax="-300">OUR SERVICES</div>
 
-                  </div>
                   <div className="text" data-swiper-parallax="-100">
                     <p className='text-xl'>
                       We offer a comprehensive range of engineering services, including Procurement and Installation,
                       Building and construction and material supplies, Electrical gates and Intercom installations and repairs, and Project planning, design implementation and commissioning etc.
                       Our multidisciplinary approach ensures holistic solutions for every project
                     </p>
-                    <div className='py-16'>
+                    <div className='py-12'>
                       <Link to={`/services`} className='bg-color-secondary text-uppercase text-white text-decoration-none shadow-sm p-4 font-semibold text-lg w-100 my-5'>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Learn more &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</Link>
                     </div>
                   </div>
@@ -221,15 +214,16 @@ const HeroSection = () => {
             </div>
 
           </SwiperSlide>
-          <SwiperSlide className='m-0' style={{ backgroundImage: `url(${picture2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <SwiperSlide className='px-5' style={{ backgroundImage: `url(${picture2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             {/* Overlay div */}
             <div className="absolute inset-0 bg-black/50 bg-opacity-80 w-full h-full m-0 p-0"></div>
             <div className="relative w-full h-full" >
               <div className="title-content w-full absolute text-white animate__animated animate__fadeInRight">
-                <div className="py-16">
+                <div className="py-12">
                   <p>Engineering Excellence in Action</p>
 
-                  <div className="title font-bold py-4 text-uppercase" data-swiper-parallax="-300"> Engineering Excellence</div>
+                  <div className="title font-bold py-4 hidden lg:block" data-swiper-parallax="-300">Engineering Excellence</div>
+                  <div className="font-bold text-4xl py-4 block lg:hidden" data-swiper-parallax="-300">Engineering Excellence</div>
 
                   <div className="text" data-swiper-parallax="-100">
                     <p className='text-xl'>

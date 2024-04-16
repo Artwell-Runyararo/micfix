@@ -13,16 +13,16 @@ const NavBar = () => {
 
   return (<>
     <div className='container-fluid'>
-      <div className="row bg-color-secondary ">
-        <div className="row g-0">
+      <div className="row bg-color-secondary">
+        <div className="row g-0 m-0 p-0">
           <div className="col-sm-0 col-md-0 col-lg-1">&ensp;</div>
           <div className="col-sm col-md col-lg">
-            <div className="row py-4">
+            <div className="row">
 
 
               {/* Logo Desktop */}
               <div className="col-sm-12 col-md-12 col-lg-4 hidden lg:inline-flex">
-                <Space >
+                <Space className='p-2'>
                   <span><img src={logo} alt='micfix' className="object-contain" width={70} /></span>
                   <span className='text-white font-bold text-4xl'>Micfix Engineering</span>
                 </Space>
@@ -32,10 +32,10 @@ const NavBar = () => {
 
 
               {/* Logo Mobile */}
-              <div className="col-sm col-md col-lg-12  justify-center inline-flex lg:hidden ">
-                <Flex size={'middle'} gap="middle" justify='space-around' className='w-full'>
+              <div className="col-sm-12 col-md-12 col-lg-12  justify-center inline-flex lg:hidden ">
+                <Flex size={'small'} gap="small" justify='space-around' className='w-full'>
                   <Space>
-                    <img src={logo} alt='micfix' className="object-contain" width={50} /> <span className='text-white font-bold text-3xl'>Micfix Engineering</span>
+                    <img src={logo} alt='micfix' className="img-fluid object-contain" width={50} /><span className='text-white font-bold text-3xl'>Micfix Engineering</span>
                   </Space>
                   <Space>
                     {/* Icons Drop down menu items Mobile */}
@@ -154,9 +154,9 @@ const NavBar = () => {
         </div>
         {/* Removed from here */}
 
-        <div className="inline-block lg:hidden flex-1 justify-end z-50  items-center">
+        <div className="m-0 p-0 inline-block lg:hidden flex-1 justify-end z-50  items-center">
           <div className={`${!toggleMobile ? "hidden" : "flex"} w-full p-6  z-50 bg-white animate__animated animate__fadeInDown animate__fast border  absolute top-48 right-0 my-2  sidebar`} >
-            <div className="row">
+            <div className="row m-0 p-0">
               <div className="col-sm col-md col-lg  inline-block lg:hidden">
                 <nav>
                   {/* Mobile Navigation */}
