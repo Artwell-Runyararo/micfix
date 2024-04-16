@@ -32,9 +32,9 @@ export const sendingEmails = async (requestBody) => {
         },
     };
     const data = {
-        service_id: 'service_4wxse8d',
-        template_id: 'template_bp1rfob',
-        user_id: 'KYskwA-48COl3ta7u',
+        service_id: 'service_ycuk9y5',
+        template_id: 'template_d6gjl2c',
+        user_id: 'u-sqjbUVEqhvF5AYk',
         template_params: {
             'from_name': requestBody?.from_name,
             'email': requestBody?.email,
