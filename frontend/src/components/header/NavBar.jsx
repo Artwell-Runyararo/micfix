@@ -88,7 +88,7 @@ const NavBar = () => {
                         <span className=''><i className="bi bi-envelope-fill text-3xl text-color-primary"></i></span>
                         <span>
                           <p className='m-0 text-white'>Email Address</p>
-                          <p className='m-0 text-color-primary'>micfixenngineering@gmail.com</p>
+                          <p className='m-0 text-color-primary'>michael@micfix.co.zw</p>
                         </span>
                       </Space>
                     </div>
@@ -127,7 +127,7 @@ const NavBar = () => {
                             <span className=''><i className="bi bi-envelope-fill text-3xl text-color-primary"></i></span>
                             <span>
                               <p className='m-0 text-color-secondary font-semibold'>Email Address</p>
-                              <p className='m-0 text-color-primary'>micfixenngineering@gmail.com</p>
+                              <p className='m-0 text-color-primary'>michael@micfix.co.zw</p>
                             </span>
                           </Space>
                         </div>

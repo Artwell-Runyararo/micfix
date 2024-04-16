@@ -22,6 +22,9 @@ const ContactHome = () => {
                 type: 'success',
                 content: 'Your Email Has Been Successfully Sent!.',
                 duration: 6,
+                style: {
+                    marginTop: '20vh',
+                }
             });
         },
         onError: (error) => {

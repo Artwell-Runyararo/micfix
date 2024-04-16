@@ -25,6 +25,9 @@ const Contact = () => {
         type: 'success',
         content: 'Your Email Has Been Successfully Sent!.',
         duration: 6,
+        style: {
+          marginTop: '20vh',
+        }
       });
     },
     onError: (error) => {
@@ -52,7 +55,7 @@ const Contact = () => {
       <Headerz />
       <NavBar />
       <motion.div variants={staggerContainer} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.25 }}>
-        <div className="container-fluid  bgPicture hidden lg:inline">
+        <div className="container-fluid bgPicture hidden lg:inline-flex">
           {/* Welcome Section Products */}
           <div className="row bg-slate-950/90">
             <div className="col-sm-0 col-md-0 col-lg-1">&ensp;</div>
@@ -176,7 +179,7 @@ const Contact = () => {
                         <span className=''><i className="bi bi-envelope-fill text-3xl text-color-primary"></i></span>
                         <span>
                           <p className='m-0 text-white font-semibold'>Email Address</p>
-                          <p className='m-0 text-color-primary'>micfixenngineering@gmail.com</p>
+                          <p className='m-0 text-color-primary'>michael@micfix.co.zw</p>
                         </span>
                       </Space>
                       <Divider className='bg-white' />
@@ -310,7 +313,7 @@ const Contact = () => {
                   <span className=''><i className="bi bi-envelope-fill text-3xl text-color-primary"></i></span>
                   <span>
                     <p className='m-0 text-white font-semibold'>Email Address</p>
-                    <p className='m-0 text-color-primary'>micfixenngineering@gmail.com</p>
+                    <p className='m-0 text-color-primary'>michael@micfix.co.zw</p>
                   </span>
                 </Space>
                 <Divider className='bg-white' />
